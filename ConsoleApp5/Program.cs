@@ -137,7 +137,7 @@ namespace ConsoleApp5
                 }
 
 
-                System.Threading.Thread.Sleep(3000);
+                System.Threading.Thread.Sleep(2000);
 
                 Console.WriteLine("Would you like to build another character? \"Yes\" or \"No\"");
                 string anotherChar = Console.ReadLine().ToUpper();
@@ -151,7 +151,8 @@ namespace ConsoleApp5
                 else
                 {
                     Console.WriteLine("Character creation complete!");
-                    System.Threading.Thread.Sleep(3000);
+                    System.Threading.Thread.Sleep(2000);
+                   
 
                     /*
                      * 
