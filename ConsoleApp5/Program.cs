@@ -101,7 +101,7 @@ namespace ConsoleApp5
                     Random num2 = new Random();
                     int fagi = num2.Next(8, 16);
                     int fa = fagi * 5;
-                    Console.WriteLine(charName + " Agility is " + fagi + " Chance check = " + fa);
+                    Console.WriteLine(charName + " Agility is " + fagi + " Agilty check = " + fa + "%");
 
 
                     Random num3 = new Random();
@@ -120,7 +120,8 @@ namespace ConsoleApp5
 
                     Random num2 = new Random();
                     int ragi = num2.Next(13, 19);
-                    Console.WriteLine(charName + " Agility is " + ragi);
+                    int ra = ragi * 5;
+                    Console.WriteLine(charName + " Agility is " + ragi + " Agility check = " + ra + "%");
 
                     Random num3 = new Random();
                     int rlif = num3.Next(10, 18);
@@ -137,7 +138,8 @@ namespace ConsoleApp5
 
                     Random num2 = new Random();
                     int hagi = num2.Next(10, 19);
-                    Console.WriteLine(charName + " Agility is " + hagi);
+                    int ha = hagi * 5;
+                    Console.WriteLine(charName + " Agility is " + hagi + " Agility check = " + ha + "%");
 
 
                     Random num3 = new Random();
