@@ -27,7 +27,7 @@ namespace ConsoleApp5
 
         reclass:
 
-            Console.WriteLine("Choose your class");
+            Console.WriteLine("Choose your class or type \"exit\"");
             classes.ForEach(Console.WriteLine);
             string charClass = Console.ReadLine().ToUpper();
 
@@ -48,6 +48,13 @@ namespace ConsoleApp5
             else if (charClass == "HUNTER")
             {
                 Console.WriteLine("Welcome Hunter, may the wilderness guide your hunt!");
+
+            }
+            else if (charClass == "EXIT")
+            {
+                Console.WriteLine("Exiting");
+
+                Environment.Exit(0);
 
             }
 
@@ -152,15 +159,11 @@ namespace ConsoleApp5
                 {
                     Console.WriteLine("Character creation complete!");
                     System.Threading.Thread.Sleep(2000);
-                   
+                    Environment.Exit(0);
 
-                    /*
-                     * 
-                     * further idea if needed. 
-                    Console.WriteLine("Do you want to do a practice battle? Type \"Yes\" or \"No\"");
-                    string practice = Console.ReadLine().ToUpper();
+                  
                      
-                    */
+              
                 }
 
             }
