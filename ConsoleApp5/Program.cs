@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -96,10 +96,12 @@ namespace ConsoleApp5
                     Random num1 = new Random();
                     int fstr = num1.Next(13, 19);
                     Console.WriteLine(charName + " Strength is " + fstr);
+                    
 
                     Random num2 = new Random();
                     int fagi = num2.Next(8, 16);
-                    Console.WriteLine(charName + " Agility is " + fagi);
+                    int fa = fagi * 5;
+                    Console.WriteLine(charName + " Agility is " + fagi + " Chance check = " + fa);
 
 
                     Random num3 = new Random();
@@ -161,9 +163,6 @@ namespace ConsoleApp5
                     System.Threading.Thread.Sleep(2000);
                     Environment.Exit(0);
 
-                  
-                     
-              
                 }
 
             }
