@@ -101,20 +101,21 @@ namespace ConsoleApp5
 
                 if (charClass == "FIGHTER")
                 {
+                    var fighter= new Fighter();
                     Random num1 = new Random();
-                    int fstr = num1.Next(13, 19);
-                    Console.WriteLine(charName + " Strength is " + fstr);
+                    fighter.str = num1.Next(13, 19);
+                    Console.WriteLine(charName + " Strength is " + fighter.str);
                     
 
                     Random num2 = new Random();
-                    int fagi = num2.Next(8, 16);
-                    int fa = fagi * 5;
-                    Console.WriteLine(charName + " Agility is " + fagi + " Agilty check = " + fa + "%");
+                    fighter.agi = num2.Next(8, 16);
+                
+                    Console.WriteLine(charName + " Agility is " + fighter.agi + " Agilty check = " + fighter.GetAgilityPercentage()+ "%");
 
 
                     Random num3 = new Random();
-                    int flif = num3.Next(13, 21);
-                    Console.WriteLine(charName + " Hitpoints are " + flif);
+                    fighter.lif = num3.Next(13, 21);
+                    Console.WriteLine(charName + " Hitpoints are " + fighter.lif);
                 }
 
 
@@ -122,37 +123,39 @@ namespace ConsoleApp5
 
                 if (charClass == "ROGUE")
                 {
+                    var rogue= new Rogue();
                     Random num1 = new Random();
-                    int rstr = num1.Next(8, 16);
-                    Console.WriteLine(charName + " Strength is " + rstr);
+                    rogue.str = num1.Next(8, 16);
+                    Console.WriteLine(charName + " Strength is " + rogue.str);
 
                     Random num2 = new Random();
-                    int ragi = num2.Next(13, 19);
-                    int ra = ragi * 5;
-                    Console.WriteLine(charName + " Agility is " + ragi + " Agility check = " + ra + "%");
+                    rogue.agi = num2.Next(13, 19);
+                    
+                    Console.WriteLine(charName + " Agility is " + rogue.agi + " Agility check = " + rogue.GetAgilityPercentage() + "%");
 
                     Random num3 = new Random();
-                    int rlif = num3.Next(10, 18);
-                    Console.WriteLine(charName + " Hitpoints are " + rlif);
+                    rogue.lif = num3.Next(10, 18);
+                    Console.WriteLine(charName + " Hitpoints are " + rogue.lif);
                 }
 
                 // Hunter Class 
 
                 if (charClass == "HUNTER")
                 {
+                    var hunter= new Hunter();   
                     Random num1 = new Random();
-                    int hstr = num1.Next(11, 17);
-                    Console.WriteLine(charName + " Strength is " + hstr);
+                    hunter.str = num1.Next(11, 17);
+                    Console.WriteLine(charName + " Strength is " + hunter.str);
 
                     Random num2 = new Random();
-                    int hagi = num2.Next(10, 19);
-                    int ha = hagi * 5;
-                    Console.WriteLine(charName + " Agility is " + hagi + " Agility check = " + ha + "%");
+                    hunter.agi = num2.Next(10, 19);
+                    
+                    Console.WriteLine(charName + " Agility is " + hunter.agi + " Agility check = " +hunter.GetAgilityPercentage() + "%");
 
 
                     Random num3 = new Random();
-                    int hlif = num3.Next(11, 19);
-                    Console.WriteLine(charName + " Hitpoints are " + hlif);
+                    hunter.lif = num3.Next(11, 19);
+                    Console.WriteLine(charName + " Hitpoints are " + hunter.lif);
                 }
 
 
@@ -174,9 +177,26 @@ namespace ConsoleApp5
 
                 }
             }
-        }
+        } 
        
-    
+        public class Character
+        {
+            public int str { get; set; }    
+            public int agi { get; set; }    
+            public int lif { get; set; }    
+        }
+        public class Hunter: Character
+        {
+            public int GetAgilityPercentage (){return agi*6;}
+        }
+        public class Fighter: Character
+        {
+            public int GetAgilityPercentage (){return agi*5;}
+        }
+        public class Rogue: Character
+        {
+            public int GetAgilityPercentage (){return agi*7;}
+        }
     
 
 
