@@ -163,8 +163,7 @@ namespace ConsoleApp5
 
                 if (anotherChar == "YES")
                 {
-                             goto Top;
-                   
+                       goto Top;
                 }
 
                 else
@@ -176,31 +175,8 @@ namespace ConsoleApp5
                 }
             }
         }
-
-        public class Hunter
-        {
-            public int hstr { get; set; }
-            public int hagi { get; set; }
-            public int hlif { get; set; }
-
-        }
-        public class Fighter
-        {
-            public int fstr { get; set; }
-            public int fagi { get; set; }
-            public int flif { get; set; }
-
-
-        }
-
-        public class Rogue
-        {
-            public int rstr { get; set; }
-            public int ragi { get; set; }
-            public int rlif { get; set; }
-
-
-        }
+       
+    
     
 
 
