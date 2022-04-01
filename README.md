@@ -6,6 +6,7 @@ Character builder for RPG games with random rolls and min/max attributes dependi
 
 
 feature list
+
     conversion ( converted agilty roll to percentage);
     Date and time countdown ;
     masterloop with exit (can keep creating characters);
