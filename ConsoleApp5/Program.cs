@@ -15,12 +15,20 @@ namespace ConsoleApp5
             classes.Add("Fighter");
             classes.Add("Rogue");
 
-        top:
+        
+         
+        Top:
+             
+           
+             DateTime daysLeft = new DateTime(2048, 04, 05);
+             DateTime startDate = DateTime.Now;
+             TimeSpan dt = daysLeft - startDate;
+            Console.WriteLine(dt + " days, hours ,min , seconds left until Character dies of old age");
 
             Console.WriteLine("Welcome to the character creator");
             Console.WriteLine("what is your characters name?");
-
-
+                
+                
 
             string charName = Console.ReadLine();
             Console.WriteLine("characters name is " + charName);
@@ -155,8 +163,8 @@ namespace ConsoleApp5
 
                 if (anotherChar == "YES")
                 {
-
-                    goto top;
+                             goto Top;
+                   
                 }
 
                 else
@@ -193,7 +201,7 @@ namespace ConsoleApp5
 
 
         }
-    }
+    
 
 
-}
+}  } 
