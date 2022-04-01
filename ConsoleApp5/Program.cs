@@ -130,7 +130,6 @@ namespace ConsoleApp5
 
                     Random num2 = new Random();
                     rogue.agi = num2.Next(13, 19);
-                    
                     Console.WriteLine(charName + " Agility is " + rogue.agi + " Agility check = " + rogue.GetAgilityPercentage() + "%");
 
                     Random num3 = new Random();
@@ -149,7 +148,6 @@ namespace ConsoleApp5
 
                     Random num2 = new Random();
                     hunter.agi = num2.Next(10, 19);
-                    
                     Console.WriteLine(charName + " Agility is " + hunter.agi + " Agility check = " +hunter.GetAgilityPercentage() + "%");
 
 
